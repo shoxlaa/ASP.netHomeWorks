@@ -2,3 +2,12 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+$(function () {
+
+    let $list = $("#add").off();
+    $list.on("click", (e) => {
+
+        console.log("helloooo");
+    })
+})

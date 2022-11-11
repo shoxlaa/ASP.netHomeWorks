@@ -1,0 +1,5 @@
+﻿.notes-conteiner
+{
+    display: flex;
+    flex-direction: row;
+}
