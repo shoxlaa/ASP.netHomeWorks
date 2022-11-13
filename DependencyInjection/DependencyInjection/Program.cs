@@ -1,10 +1,16 @@
-using DependencyInjection.Services;
+using DependencyInjection.Services.Classes;
+using DependencyInjection.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-
+builder.Services.AddTransient<IShow, AspNet>();
+//builder.Services.AddTransient<IShow, TextFile>();
+builder.Services.AddTransient<IDevice, PC>();
+//builder.Services.AddTransient<IDevice, Phone>();
+//builder.Services.AddTransient<IFileType, JsonFileType>();
+//builder.Services.AddTransient<IFileType, TxtFileType>();
 var app = builder.Build();
 
 
