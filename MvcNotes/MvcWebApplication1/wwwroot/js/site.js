@@ -6,10 +6,9 @@ $(function () {
     let $adding = $("#add-button").unbind();
 
 
-
     $adding.on("click", (e) => {
-        let $title = $("#title-box").val().toString();
-        let $description = $("#description-box").val().toString();
+        let $title = $("#title").val().toString();
+        let $description = $("#description").val().toString();
 
         //$.get(`/Notes/GetResult`, data => {
         //    console.log(data);
@@ -19,12 +18,12 @@ $(function () {
         //        console.log(`${element} ${object[element].Title}`);
         //    }
         //});
-        console.log($title);
-        console.log($description);
-        $.post(`/Notes/Add?title=${$title}&description=${$description}`), { title: $title, description: $description },
-            data => { alert(data)  };
-
-
+        $.post(`/Notes/Add?title=${$title}&description=${$description}`, { title: $title, description: $description },
+            data => {
+                console.log($title);
+                console.log($description);
+                alert(data);
+            });
     });
 
 });

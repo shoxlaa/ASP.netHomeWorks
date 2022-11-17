@@ -19,9 +19,8 @@ namespace MvcWebApplication1.Controllers
         }
         //get from server 
         //post to server 
-
-        [HttpPost]
         //https://localhost:7224/Notes/AddNotes?title=hello&description=ophfrfgrf
+        [HttpPost]
         public IActionResult Add(string title, string description)
         {
             if (string.IsNullOrWhiteSpace(description))
@@ -36,7 +35,6 @@ namespace MvcWebApplication1.Controllers
             });
             Console.WriteLine($"{title}${description}");
             return Ok();
-            
         }
 
         [HttpGet]
