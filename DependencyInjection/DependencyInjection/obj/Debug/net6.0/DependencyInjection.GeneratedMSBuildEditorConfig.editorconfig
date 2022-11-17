@@ -1,0 +1,72 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DependencyInjection
+build_property.RootNamespace = DependencyInjection
+build_property.ProjectDir = C:\Users\Legion\Source\Repos\shoxlaa\ASP.netHomeWorkshhhh\DependencyInjection\DependencyInjection\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Legion\Source\Repos\shoxlaa\ASP.netHomeWorkshhhh\DependencyInjection\DependencyInjection
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/DependencyInjection/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGVwZW5kZW5jeUluamVjdGlvblxQYWdlc1xFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/DependencyInjection/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGVwZW5kZW5jeUluamVjdGlvblxQYWdlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/DependencyInjection/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGVwZW5kZW5jeUluamVjdGlvblxQYWdlc1xQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/DependencyInjection/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGVwZW5kZW5jeUluamVjdGlvblxQYWdlc1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/DependencyInjection/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGVwZW5kZW5jeUluamVjdGlvblxQYWdlc1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/DependencyInjection/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGVwZW5kZW5jeUluamVjdGlvblxQYWdlc1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/DependencyInjection/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RGVwZW5kZW5jeUluamVjdGlvblxQYWdlc1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-tamht0b1di
+
+[C:/Users/Legion/Source/Repos/shoxlaa/ASP.netHomeWorkshhhh/DependencyInjection/DependencyInjection/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1on92n6nic
