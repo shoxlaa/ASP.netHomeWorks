@@ -26,4 +26,21 @@ $(function () {
             });
     });
 
+
+    function addNote(buffer,notes)
+    {
+        buffer.append(`<div class="box">
+                     <div class="cont1">
+                         <input  class="image" type="image" src=${movies[i].Poster.toString()}>
+                     </div>
+                     <div class="cont2">
+                         <div class="movie-type">${movies[i].Type}</div>
+                         <div class="movie-name">${movies[i].Title}</div>
+                         <div class="year">${movies[i].Year}</div>
+                         <input type="button" class="button-details" value="Details" >
+                       
+                     </div>
+                 </div>`)
+    }
+
 });
