@@ -6,24 +6,26 @@ namespace MvcWebApplication1.Services
 {
     public class JsonWriter
     {
-        public string _fileName { get; set; } = "myjson.json";
+        public string _fileName= "myjson.json";
+        string jsonString;
         public INotesList _notesList;
-        public JsonWriter(INotesList Object)
+        public JsonWriter( INotesList Object)
         {
             _notesList = Object;
 
         }
-        public async Task WriteAsync(IEnumerable<Note> value)
+        public void Write(INotesList value)
         {
-            using FileStream createStream = File.Create(_fileName);
-            await JsonSerializer.SerializeAsync<IEnumerable<Note>>(createStream,value);
-            await createStream.DisposeAsync();
+            //JsonSerializer.Serialize<INotesList>(_fileName, value);
+            
+             jsonString = JsonSerializer.Serialize<IEnumerable<Note>>(_notesList.GetItems());
+            File.WriteAllText(_fileName, jsonString);
         }
-        public async Task<INotesList> ReadAsytnc()
+        public IEnumerable<Note> Read()
         {
-            using FileStream openStream = File.OpenRead(_fileName);
-            INotesList? Notes =
-                await JsonSerializer.DeserializeAsync<INotesList>(openStream);
+           
+            string jsonString = File.ReadAllText(_fileName);
+            IEnumerable<Note> Notes = JsonSerializer.Deserialize<IEnumerable<Note>>(jsonString)!;
             return Notes;
         }
     }

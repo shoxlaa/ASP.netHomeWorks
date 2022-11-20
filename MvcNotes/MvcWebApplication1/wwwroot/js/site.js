@@ -4,38 +4,43 @@
 // Write your JavaScript code.
 $(function () {
     let $adding = $("#add-button").unbind();
+    let $refresh = $("#ref").unbind();
+    let $listofNotes = $("#list");
+    
 
     $adding.on("click", (e) => {
         let $title = $("#title").val().toString();
         let $description = $("#description").val().toString();
-        let $listOfNotes = $("#list");
+
         $.post(`/Notes/Add?title=${$title}&description=${$description}`, { title: $title, description: $description },
             data => {
                 console.log($title);
                 console.log($description);
                 //alert(data);
             });
+    });
+
+    $refresh.on("click", (e) => {
 
         $.get(`/Notes/GetResult`, data => {
             //console.log(data);
-            let object = JSON.parse(data);
+
             //console.log(object);
-            for (const element in object) {
-                let objElement = object[element];
-                $listOfNotes.empty();
-                $listOfNotes.append(`<li>
-            <div>${object[element].Title}</div>
-<div>${object[element].Description}</div>
-<div>${object[element].Datetime}</div>
-<div>${object[element].Tags}</div>
+            for (const element in data) {
+                let objElement = data[element];
+                console.log(objElement);
+                $listofNotes.append(`<li>
+            <div>${objElement.title}</div>
+<div>${objElement.description}</div>
+<div>${objElement.dateTime}</div>
+<div>${objElement.tags}</div>
                         </li>`)
             }
-           
+
+
         });
-        
-    });
 
-
+    })
  
 
 });

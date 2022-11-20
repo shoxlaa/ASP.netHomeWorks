@@ -11,8 +11,8 @@ namespace MvcWebApplication1.Controllers
         public readonly JsonWriter _writer;
         public NotesController(INotesList notesList, JsonWriter jsonWriter)
         {
+            _writer = jsonWriter;
             _notesList = notesList;
-            _notesList.AddItem(new Note() { Title = "Hello", Description = "dedee", DateTime = DateTime.Now });
         }
         public IActionResult Index()
         {
@@ -34,16 +34,17 @@ namespace MvcWebApplication1.Controllers
                 Description = description,
                 DateTime = DateTime.Now
             });
+            _writer.Write(_notesList);
             Console.WriteLine($"{title}${description}");
             return Ok();
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetResult()
+        public IActionResult GetResult()
         {
             //_notesList.GetItems();
-            await _writer.WriteAsync(_notesList.GetItems());
-            return Ok();
+            var f = _writer.Read();
+            return  Ok(f);
         }
         public IActionResult Edit(string title, string name, int index)
         {
