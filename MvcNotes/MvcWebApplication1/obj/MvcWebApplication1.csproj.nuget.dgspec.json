@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guli_tp48\\source\\repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\MvcWebApplication1.csproj": {}
+    "C:\\Users\\Guli_tp48\\Source\\Repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\MvcWebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guli_tp48\\source\\repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\MvcWebApplication1.csproj": {
+    "C:\\Users\\Guli_tp48\\Source\\Repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\MvcWebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guli_tp48\\source\\repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\MvcWebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Guli_tp48\\Source\\Repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\MvcWebApplication1.csproj",
         "projectName": "MvcWebApplication1",
-        "projectPath": "C:\\Users\\Guli_tp48\\source\\repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\MvcWebApplication1.csproj",
+        "projectPath": "C:\\Users\\Guli_tp48\\Source\\Repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\MvcWebApplication1.csproj",
         "packagesPath": "C:\\Users\\Guli_tp48\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guli_tp48\\source\\repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\Guli_tp48\\Source\\Repos\\shoxlaa\\ASP.netHomeWorks\\MvcNotes\\MvcWebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

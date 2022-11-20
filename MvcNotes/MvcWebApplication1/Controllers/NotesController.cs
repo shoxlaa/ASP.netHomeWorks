@@ -8,7 +8,8 @@ namespace MvcWebApplication1.Controllers
     public class NotesController : Controller
     {
         public readonly INotesList _notesList;
-        public NotesController(INotesList notesList)
+        public readonly JsonWriter _writer;
+        public NotesController(INotesList notesList, JsonWriter jsonWriter)
         {
             _notesList = notesList;
             _notesList.AddItem(new Note() { Title = "Hello", Description = "dedee", DateTime = DateTime.Now });
@@ -38,12 +39,11 @@ namespace MvcWebApplication1.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetResult()
-
+        public async Task<IActionResult> GetResult()
         {
             //_notesList.GetItems();
-            string data = JsonSerializer.Serialize(_notesList.GetItems());
-            return Ok(data);
+            await _writer.WriteAsync(_notesList.GetItems());
+            return Ok();
         }
         public IActionResult Edit(string title, string name, int index)
         {
