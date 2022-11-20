@@ -5,42 +5,37 @@
 $(function () {
     let $adding = $("#add-button").unbind();
 
-
     $adding.on("click", (e) => {
         let $title = $("#title").val().toString();
         let $description = $("#description").val().toString();
-
-        //$.get(`/Notes/GetResult`, data => {
-        //    console.log(data);
-        //    let object = JSON.parse(data);
-        //    console.log(object);
-        //    for (const element in object) {
-        //        console.log(`${element} ${object[element].Title}`);
-        //    }
-        //});
+        let $listOfNotes = $("#list");
         $.post(`/Notes/Add?title=${$title}&description=${$description}`, { title: $title, description: $description },
             data => {
                 console.log($title);
                 console.log($description);
-                alert(data);
+                //alert(data);
             });
+
+        $.get(`/Notes/GetResult`, data => {
+            //console.log(data);
+            let object = JSON.parse(data);
+            //console.log(object);
+            for (const element in object) {
+                let objElement = object[element];
+                $listOfNotes.empty();
+                $listOfNotes.append(`<li>
+            <div>${object[element].Title}</div>
+<div>${object[element].Description}</div>
+<div>${object[element].Datetime}</div>
+<div>${object[element].Tags}</div>
+                        </li>`)
+            }
+           
+        });
+        
     });
 
 
-    function addNote(buffer,notes)
-    {
-        buffer.append(`<div class="box">
-                     <div class="cont1">
-                         <input  class="image" type="image" src=${movies[i].Poster.toString()}>
-                     </div>
-                     <div class="cont2">
-                         <div class="movie-type">${movies[i].Type}</div>
-                         <div class="movie-name">${movies[i].Title}</div>
-                         <div class="year">${movies[i].Year}</div>
-                         <input type="button" class="button-details" value="Details" >
-                       
-                     </div>
-                 </div>`)
-    }
+ 
 
 });
