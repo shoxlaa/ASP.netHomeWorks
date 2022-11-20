@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Server.IIS.Core;
 using MvcWebApplication1.Models;
 using MvcWebApplication1.Services;
 using System.Text.Json;
-
+using System.IO;
 namespace MvcWebApplication1.Controllers
 {
     public class NotesController : Controller
@@ -11,7 +12,7 @@ namespace MvcWebApplication1.Controllers
         public NotesController(INotesList notesList)
         {
             _notesList = notesList;
-            _notesList.AddItem(new Note() { Title = "Hello", Description = "dedee", DateTime = DateTime.Now });
+           // _notesList.AddItem(new Note() { Title = "Lol", Description = "dedee", DateTime = DateTime.Now });
         }
         public IActionResult Index()
         {
@@ -33,17 +34,20 @@ namespace MvcWebApplication1.Controllers
                 Description = description,
                 DateTime = DateTime.Now
             });
-            Console.WriteLine($"{title}${description}");
+            Console.WriteLine($"{title} ${description}");
             return Ok();
         }
 
         [HttpGet]
         public IActionResult GetResult()
-
         {
-            //_notesList.GetItems();
-            string data = JsonSerializer.Serialize(_notesList.GetItems());
-            return Ok(data);
+            ////_notesList.GetItems();
+            //string fileName = "MyNotesss.json";
+  
+            //FileStream fs = new FileStream(fileName,FileMode.OpenOrCreate);
+            JsonSerializer.Serialize(_notesList.GetItems());
+            
+            return Ok();
         }
         public IActionResult Edit(string title, string name, int index)
         {
